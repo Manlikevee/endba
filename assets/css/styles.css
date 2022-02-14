@@ -30,11 +30,14 @@
   --z-fixed: 100;
 }
 
-
+p {
+  display: block; 
+   margin: 6px 0px 6px 0px !important;
+}
 
 @media screen and (min-width: 1024px) {
   :root {
-    --normal-font-size: 15px;
+    --normal-font-size: 14px;
     --small-font-size: .875rem;
     --smaller-font-size: .913rem;
   }
@@ -257,10 +260,7 @@ img {
 
 /*===== Active link =====*/
 .active {
-  color: #fff;
-  padding: 15px;
-  background: green;
-  border-radius: 9px;
+  color: var(--first-color);
 }
 
 /* ========== MEDIA QUERIES ==========*/
