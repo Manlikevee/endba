@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/role.css">
+        <link rel="stylesheet" href="assets/css/board.css">
+
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/perfil.jpg" alt="" class="header__img">
+
+                <a href="#" class="header__logo">Bedimcode</a>
+    
+                <div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                </div>
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name">Bedimcode</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Profile</h3>
+    
+                            <a href="#" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-user nav__icon' ></i>
+                                    <span class="nav__name">Profile</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Passwords</a>
+                                        <a href="#" class="nav__dropdown-item">Mail</a>
+                                        <a href="#" class="nav__dropdown-item">Accounts</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-message-rounded nav__icon' ></i>
+                                <span class="nav__name">Messages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Menu</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Notifications</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item">Publish</a>
+                                        <a href="#" class="nav__dropdown-item">Program</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-compass nav__icon' ></i>
+                                <span class="nav__name">Explore</span>
+                            </a>
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bookmark nav__icon' ></i>
+                                <span class="nav__name">Saved</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <div class="role-wrapper">
+                <header>
+                    <div class="date-profile">
+                        <small>Tuesday 2</small>
+                        <div class="inner-date">
+                            <div class="profile-complete">
+                                    <p>D.KARGAEV</p>
+                                   
+                            </div>
+                            <div class="img-not">
+                                <img src="img/img-not.png" alt="">
+                                <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.815 12.973a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM13.815 5.973a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM13.815 19.973a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z" stroke="#424243" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="name">
+                        <p>Welcome Nwife!</p>
+                        <small>Here is What We Have For You Today</small>
+                    </div> -->
+                    <!-- <div class="jobrole-text"><p>JOB ROLES</p></div> -->
+                    <div class="application-status">
+                        <p>Submitted Application</p>
+                    </div>
+                </header>
+                <div class="main-content">
+                    <div class="search-fields">
+                        <div class="input-search">
+                            <input type="text" placeholder="Search roles">
+                            <svg width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x=".846" y=".299" width="32" height="32" rx="4" fill="url(#a)"/>
+                                <path d="M16.18 20.966a5.333 5.333 0 1 0 0-10.667 5.333 5.333 0 0 0 0 10.667ZM22.846 22.3l-2.9-2.9" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="a" x1="16.846" y1=".299" x2="16.846" y2="32.299" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#A91F2F"/>
+                                    <stop offset="1" stop-color="#A91F2F"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity=".7" clip-path="url(#a)" stroke="#424243" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M4.846 21.3v-7M4.846 10.3v-7M12.846 21.3v-9M12.846 8.3v-5M20.846 21.3v-5M20.846 12.3v-9M1.846 14.3h6M9.846 8.3h6M17.846 16.3h6"/>
+                            </g>
+                            <defs>
+                              <clipPath id="a">
+                                <path fill="#fff" transform="translate(.846 .3)" d="M0 0h24v24H0z"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="drop-down"><label for="">Role match</label><select name="" id=""><option value="">Hello</option></select></div>
+                        <div class="drop-down"><label for="">Date posted</label><select name="" id=""><option value="">Hello</option></select></div>
+                        <div class="drop-down"><label for="">Role type</label><select name="" id=""><option value="">Hello</option></select></div>
+                        <div class="drop-down"><label for="">Country</label><select name="" id=""><option value="">Hello</option></select></div>
+                        <div class="drop-down"><label for="">City</label><select name="" id=""><option value="">Hello</option></select></div>
+                    </div>
+        
+                    <div class="role-cards-wrapper">
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/linkedin.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                               
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/twitter.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                               
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/google.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                               
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/twitter.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                               
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/linkedin.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                            
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/google.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                               
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/google.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                                <small>Applied 2days ago</small>
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/linkedin.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                                <small>Resume Downloaded 2days ago</small>
+                            </div>
+                        </div>
+        
+                        <div class="role-card">
+                            <div class="company-location">
+                                <img src="img/twitter.svg" alt="">
+                                <!-- <small><span></span> Abuja, Nigeria</small> -->
+                                <div class="com-loc">
+                                    <img src="img/location.svg" alt="">
+                                    <small>Abuja, Nigeria</small>
+                                </div>
+                            </div>
+                            <div class="service-position">
+                            <p>Financial Services</p>
+                            <p class="role-card-bold">Risk Consulting Director</p>
+                            </div>
+                            <p class="role-card-text">We are looking for an experienced tax preparer to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, </p>
+                            <div class="tag-time">
+                                <p>Fulltime</p>
+                                <small>Application viewed 5days ago</small>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

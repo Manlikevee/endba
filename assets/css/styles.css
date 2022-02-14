@@ -1,6 +1,5 @@
 /*========== GOOGLE FONTS ==========*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /*========== VARIABLES CSS ==========*/
 :root {
   --header-height: 3.5rem;
@@ -14,6 +13,8 @@
   --text-color-light: #A5A1AA;
   --body-color: #F9F6FD;
   --container-color: #FFFFFF;
+
+
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -29,9 +30,11 @@
   --z-fixed: 100;
 }
 
+
+
 @media screen and (min-width: 1024px) {
   :root {
-    --normal-font-size: 0.989rem;
+    --normal-font-size: 15px;
     --small-font-size: .875rem;
     --smaller-font-size: .913rem;
   }
@@ -43,6 +46,7 @@
 }
 
 body {
+  line-height: 20px;
   margin: var(--header-height) 0 0 0;
   padding: 1rem 1rem 0;
   font-family: var(--body-font);
@@ -253,7 +257,10 @@ img {
 
 /*===== Active link =====*/
 .active {
-  color: var(--first-color);
+  color: #fff;
+  padding: 15px;
+  background: green;
+  border-radius: 9px;
 }
 
 /* ========== MEDIA QUERIES ==========*/
