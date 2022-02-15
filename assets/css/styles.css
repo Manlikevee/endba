@@ -18,7 +18,7 @@
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
-  --normal-font-size: 1.101rem;
+  --normal-font-size: 1.051rem;
   --small-font-size: .85rem;
   --smaller-font-size: .85rem;
 
@@ -30,14 +30,11 @@
   --z-fixed: 100;
 }
 
-p {
-  display: block; 
-   margin: 6px 0px 6px 0px !important;
-}
+
 
 @media screen and (min-width: 1024px) {
   :root {
-    --normal-font-size: 14px;
+    --normal-font-size: 13px;
     --small-font-size: .875rem;
     --smaller-font-size: .913rem;
   }
@@ -46,6 +43,8 @@ p {
 /*========== BASE ==========*/
 *, ::before, ::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -61,6 +60,8 @@ body {
 h3 {
   margin: 0;
 }
+
+
 
 a {
   text-decoration: none;
