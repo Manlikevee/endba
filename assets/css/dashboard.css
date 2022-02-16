@@ -229,9 +229,17 @@
   .jobs {
     margin-top: 15px;
   }
+  .name{
+    color: #000;
+  }
   .name p {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .name small{
+    font-size: 19px;
   }
   header small {
     font-weight: 500;
@@ -315,7 +323,7 @@
   
   
   .job-one{
-    padding: 20px;
+    padding: 18px;
     margin: 10px 0;
     border-radius: 7px;
     background-color: #fff;
@@ -341,10 +349,10 @@
   
   .jobtitle{
  
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 14px;
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 10px;
@@ -352,13 +360,13 @@
   
   .jobdesc{
 
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 14px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   }
   
   .desc_text{
