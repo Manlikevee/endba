@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/alluser.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/perfil.jpg" alt="" class="header__img">
+
+                <a href="#" class="header__logo">Bedimcode</a>
+    
+                <div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                </div>
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name">Bedimcode</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Profile</h3>
+    
+                            <a href="index.html" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-user nav__icon' ></i>
+                                    <span class="nav__name">Profile</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="index copy.html" class="nav__dropdown-item">Passwords</a>
+                                        <a href="userprofile.html" class="nav__dropdown-item">Mail</a>
+                                        <a href="userprofile2.html" class="nav__dropdown-item">Accounts</a>
+                                        <a href="edituser.html" class="nav__dropdown-item" >total edit</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="index copy 2.html" class="nav__link">
+                                <i class='bx bx-message-rounded nav__icon' ></i>
+                                <span class="nav__name">Messages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Menu</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Notifications</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item">Publish</a>
+                                        <a href="#" class="nav__dropdown-item">Program</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="landing user.html" class="nav__link">
+                                <i class='bx bx-compass nav__icon' ></i>
+                                <span class="nav__name">Explore</span>
+                            </a>
+                            <a href="landing admin.html" class="nav__link">
+                                <i class='bx bx-bookmark nav__icon' ></i>
+                                <span class="nav__name">Saved</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <div class="main-content">
+        
+                <div class="topnav">
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
+                    <div class="button-container">
+                           <input type="button" value="+ NEW MEMBER">
+                    </div>
+    
+                  </div>
+    
+    
+                <div class="role-cards-wrapped">
+                    <div class="role-card">
+                        <div class="company-location">
+                           <div class="profile"><img src="img/hmm.jpg" alt=""></div> 
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Savannahd Nguyen</p>
+                        <div class="tag-time">
+                            <p>Cosec Admin</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text"> Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (1).png" alt=""> </div> 
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Jerome Bell</p>
+                        <div class="tag-time">
+                            <p>Managing Director</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (1).png" alt=""> </div> 
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Jerome Bell</p>
+                        <div class="tag-time">
+                            <p>Managing Director</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (2).png" alt=""></div>
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Theresa Webb</p>
+                        <div class="tag-time">
+                            <p>Accountant General</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (3).png" alt=""></div>
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Courtney Henry</p>
+                        <div class="tag-time">
+                            <p>Financial Analyst</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (4).png" alt=""></div>
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Arlene McCoy</p>
+                        <div class="tag-time">
+                            <p>Cosec Admin</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (5).png" alt=""></div>
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Darlene Robertson</p>
+                        <div class="tag-time">
+                            <p>Cosec Admin</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (6).png" alt=""></div>
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Annette Black</p>
+                        <div class="tag-time">
+                            <p>Accountant General</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (7).png" alt=""></div>
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Brooklyn Simmons</p>
+                        <div class="tag-time">
+                            <p>Accountant General</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    <div class="role-card">
+                        <div class="company-location">
+                            <div class="profile"><img src="img/Ellipse 3 (3).png" alt=""></div>
+                            <!-- <small><span></span> Abuja, Nigeria</small> -->
+                            <div class="com-loc">
+                                <b>.....</b>
+                            </div>
+                        </div>
+                        <div class="service-position">
+                        <p>Leslie Alexander</p>
+                        <div class="tag-time">
+                            <p>Managing Director</p>
+                        </div>
+                        </div>
+                        <div class="personal-info">
+                        <p class="role-card-text">Email Address</p>
+                        <p><span>bill.sanders@example.com</span></p>    
+                        </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Phone Number</p>
+                        <p><span>08099585744</span></p> 
+                    </div>
+    
+                        <div class="personal-info">
+                        <p class="role-card-text">Gender</p>
+                        <p><span>male</span></p> 
+                        </div>
+    
+                    </div>
+    
+                    
+                    
+                    
+                </div>
+            </div>
+
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
