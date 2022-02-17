@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/edit.css">
+
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/perfil.jpg" alt="" class="header__img">
+
+                <a href="#" class="header__logo">Bedimcode</a>
+    
+                <div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                </div>
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name">Bedimcode</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Profile</h3>
+    
+                            <a href="index.html" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-user nav__icon' ></i>
+                                    <span class="nav__name">Profile</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="index copy.html" class="nav__dropdown-item">Passwords</a>
+                                        <a href="userprofile.html" class="nav__dropdown-item">Mail</a>
+                                        <a href="userprofile2.html" class="nav__dropdown-item">Accounts</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="index copy 2.html" class="nav__link">
+                                <i class='bx bx-message-rounded nav__icon' ></i>
+                                <span class="nav__name">Messages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Menu</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Notifications</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item">Publish</a>
+                                        <a href="#" class="nav__dropdown-item">Program</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="landing user.html" class="nav__link">
+                                <i class='bx bx-compass nav__icon' ></i>
+                                <span class="nav__name">Explore</span>
+                            </a>
+                            <a href="landing admin.html" class="nav__link">
+                                <i class='bx bx-bookmark nav__icon' ></i>
+                                <span class="nav__name">Saved</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+            <section>
+                <div class="contentarea">
+                  <div class="headingarea">
+                    <p>
+                      Edit Profile
+                    </p>
+    
+                    <p>
+                      x
+                    </p>
+                  </div>
+                <div class="formbox">
+                  <div class="photosection">
+                  <div class="picbox">
+                            <div class="profileimg">
+                              <img src="img/Rectangle 150.svg" alt="">
+                            </div>
+    
+                            <div class="changephoto">
+                                <p><img src="img/Group 329.svg" alt=""></p>
+                            </div>
+    
+                            <div class="imginstruction">
+                              Acceptable format: jpg or png.
+                                <p> Max Size: 500kb</p> 
+                                 <p>Min Size: 70kb</p> 
+                                  
+                            </div>
+    
+                  </div>
+                </div>
+    
+                  <div class="formcontainer">
+    
+                      <div class="formgroup">
+                        <div class="label">Name</div>
+                        <div class="input"><input type="text" placeholder="Adeleye Akinoluwa"></div>
+                      </div>
+    
+                      <div class="formgroup">
+                        <div class="label">Company’s Name</div>
+                        <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+                      </div>
+    
+                      <div class="formgroup">
+                        <div class="label"><label for="">Role</label></div>
+                        <div class="input"><input type="text" placeholder="Cosec Admin"></div>
+                      </div>
+    
+                      <div class="formgroup">
+                        <div class="label">Work email</div>
+                        <div class="input"><input type="text" placeholder="adeleyeakinloluwa@boardroom.com"></div>
+                      </div>
+    
+                      <div class="formgroup">
+                        <div class="label">Phone number</div>
+                        <div class="input"><input type="text" placeholder="08233456677"></div>
+                      </div>
+    
+            
+    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="contentarea">
+                <div class="headingarea">
+                  <p>
+                    Edit Personal Details
+                   
+                  </p>
+                  <p>
+                    x
+                  </p>
+                </div>
+                <div class="formboxs">
+                
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Gender</div>
+      <div class="input">    
+        <select id="gender" name="gender">
+        <option value="">Female</option>
+        <option value="">Male</option>
+      </select>
+    </div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Personal email</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    </div>
+    
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Date of Birth</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Blood group</div>
+      <div class="input">
+        <select id="gender" name="gender">
+        <option value="">AA</option>
+        <option value="">Male</option>
+      </select></div>
+    </div>
+    
+    </div>
+    
+    <div class="formgroup">
+    <div class="label">Residential Address</div>
+    <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+    <div class="label">Permanent Address</div>
+    <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    
+    
+    
+    
+                </div>
+              </div>
+    
+              <div class="contentarea">
+                <div class="headingarea">
+                  <p>
+                    Edit Professional Details
+                  </p>
+                  <p>
+                    X
+                  </p>
+                </div>
+                <div class="formboxs">
+                
+    
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Title</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Employment Type</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Company Name</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Location</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    </div>
+    
+    
+    <p>
+    <b>Start Date</b> 
+    </p>
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Month</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Year</div>
+      <div class="input"><input type="date" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    </div>
+    
+    
+    <p>
+    <b>End Date</b> 
+    </p>
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Month</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Year</div>
+      <div class="input"><input type="date" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    </div>
+    
+    
+    <div class="formgroup">
+    <p class="experience" >  + Add experience </p>
+    </div>
+    
+    <div class="formgroup">
+    <p class="titleheader">Curriculum vitae</p>
+    <p class="cv"> akinola’s curriculum vitae.pdf </p>
+    </div>
+    
+    <div class="formgroup">
+    <input type="button" class="button" value="Submit">
+    </div>
+    
+    
+    
+    
+    
+                </div>
+              </div>
+    
+      
+    
+              </section>
+
+
+
+        </main>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
