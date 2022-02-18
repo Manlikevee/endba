@@ -262,6 +262,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
   }
+  .card-wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+  }
   .card {
     padding: 30px 20px;
     background-color: #fff;
@@ -402,6 +407,7 @@
   @media screen and (max-width: 1142px){
     .all-activities{
       width: 100%;
+      height: calc(100vh - 5rem);
     }
   }
   
@@ -435,6 +441,14 @@
     width: 100%;
   }
     .card-wrapper {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+     
+    
+    }
+    .card-wrapper2 {
       width: 100%;
       margin: auto;
       display: flex;
