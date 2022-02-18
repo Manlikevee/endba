@@ -6,6 +6,25 @@
       "leftside main rightside";
   }
 
+  .clock {
+    background: #333333;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .clock-time,
+  .clock-ampm {
+    font-family: "Concert One", cursive;
+    font-size: 25px;
+    color: #eeeeee;
+  }
+  
+  .clock-time {
+    font-size: 25px;
+  }
+
   .msg-nav {
     /* background-color: orange; */
     background-color: white;
