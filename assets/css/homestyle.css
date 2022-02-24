@@ -149,6 +149,8 @@
   .box2 .card .title {
     color: grey;
     font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .box2 .card button {
@@ -186,6 +188,9 @@
         justify-content: center;
         width: 100%;
         margin-bottom: 30px;
+        min-height: auto;
+        overflow: visible;
+        overflow: visible;
       }
   
       .box2 .card {
