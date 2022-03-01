@@ -4,6 +4,12 @@
     grid-template-rows: 5.5rem;
 }
 
+
+.expimg img{
+    width: 55px;
+    height: 55px;
+}
+
 .side-nav{
     background-color: palevioletred;
     background-color: #fff;
@@ -199,7 +205,7 @@ input::placeholder{
     color: #424243;
     line-height: 1.45;
 /* background-color: yellow;     */
-    height: calc(90vh - 15rem);
+    height: calc(90vh - 9rem);
     font-size: 15.5px;
     overflow-y: scroll;
 }
@@ -214,6 +220,7 @@ list-style-position: inside;
 
 @media screen and (max-width: 1114px) {
     .role-cards-wrapper{
+        margin-top: 42px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }

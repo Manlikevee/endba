@@ -122,7 +122,7 @@
                     </p>
     
                     <p>
-                      .
+                      x
                     </p>
                   </div>
                 <div class="formbox">
@@ -133,7 +133,7 @@
                             </div>
     
                             <div class="changephoto">
-                                <p>u_form.image</p>
+                                <p><img src="img/Group 329.svg" alt=""></p>
                             </div>
     
                             <div class="imginstruction">
@@ -149,25 +149,30 @@
                   <div class="formcontainer">
     
                       <div class="formgroup">
-                        <div class="label">UserName</div>
-                        <div class="input">{{ u_form.username }}</div>
+                        <div class="label">Name</div>
+                        <div class="input"><input type="text" placeholder="Adeleye Akinoluwa"></div>
+                      </div>
+    
+                      <div class="formgroup">
+                        <div class="label">Company’s Name</div>
+                        <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
                       </div>
     
                       <div class="formgroup">
                         <div class="label"><label for="">Role</label></div>
-                        <div class="input"><input type="text" placeholder="Jobseeker" value="" readonly></div>
+                        <div class="input"><input type="text" placeholder="Cosec Admin"></div>
                       </div>
     
                       <div class="formgroup">
-                        <div class="label">Work Email</div>
-                        <div class="input"><div class="input">{{ u_form.email }}</div></div>
+                        <div class="label">Work email</div>
+                        <div class="input"><input type="text" placeholder="adeleyeakinloluwa@boardroom.com"></div>
                       </div>
     
-                      
                       <div class="formgroup">
                         <div class="label">Phone number</div>
-                        <div class="input"><input type="text" placeholder="**********"></div>
+                        <div class="input"><input type="text" placeholder="08233456677"></div>
                       </div>
+    
             
     
                   </div>
@@ -181,7 +186,7 @@
                    
                   </p>
                   <p>
-                    .
+                    x
                   </p>
                 </div>
                 <div class="formboxs">
@@ -190,26 +195,45 @@
     <div class="formgroup">
       <div class="label">Gender</div>
       <div class="input">    
-        {{p_form.gender}}
+        <select id="gender" name="gender">
+        <option value="">Female</option>
+        <option value="">Male</option>
+      </select>
     </div>
     </div>
     
     <div class="formgroup">
-      <div class="label">Job Specialty</div>
-      <div class="input">{{p_form.job_specialty}}</div>
+      <div class="label">Personal email</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
     </div>
     
     </div>
-
+    
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Date of Birth</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Blood group</div>
+      <div class="input">
+        <select id="gender" name="gender">
+        <option value="">AA</option>
+        <option value="">Male</option>
+      </select></div>
+    </div>
+    
+    </div>
     
     <div class="formgroup">
     <div class="label">Residential Address</div>
-    <div class="input">{{p_form.residential_address}}</div>
+    <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
     </div>
     
     <div class="formgroup">
     <div class="label">Permanent Address</div>
-    <div class="input">{{p_form.permanent_address}}</div>
+    <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
     </div>
     
     
@@ -225,7 +249,7 @@
                     Edit Professional Details
                   </p>
                   <p>
-                    .
+                    X
                   </p>
                 </div>
                 <div class="formboxs">
@@ -233,45 +257,67 @@
     
     <div class="row">
     <div class="formgroup">
-      <div class="label">JobTitle</div>
-      <div class="input">{{p_form.experience1_title}}</div>
+      <div class="label">Title</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
     </div>
     
     <div class="formgroup">
-      <div class="label">Job Description</div>
-      <div class="input">{{p_form.experience1_desc}}</div>
+      <div class="label">Employment Type</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
     </div>
     </div>
-
+    
     <div class="row">
-      <div class="formgroup">
-        <div class="label">JobTitle 2</div>
-        <div class="input">{{p_form.experience2_title}}</div>
-      </div>
-      
-      <div class="formgroup">
-        <div class="label">Job Description 2</div>
-        <div class="input">{{p_form.experience2_desc}}</div>
-      </div>
-      </div>
+    <div class="formgroup">
+      <div class="label">Company Name</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
     
-      <div class="row">
-        <div class="formgroup">
-          <div class="label">JobTitle 3</div>
-          <div class="input">{{p_form.experience3_title}}</div>
-        </div>
-        
-        <div class="formgroup">
-          <div class="label">Job Description 3</div>
-          <div class="input">{{p_form.experience3_desc}}</div>
-        </div>
-        </div>
-
-
-
-
+    <div class="formgroup">
+      <div class="label">Location</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    </div>
     
     
+    <p>
+    <b>Start Date</b> 
+    </p>
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Month</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Year</div>
+      <div class="input"><input type="date" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    </div>
+    
+    
+    <p>
+    <b>End Date</b> 
+    </p>
+    <div class="row">
+    <div class="formgroup">
+      <div class="label">Month</div>
+      <div class="input"><input type="text" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    <div class="formgroup">
+      <div class="label">Year</div>
+      <div class="input"><input type="date" placeholder="Integrated Software Services Limited"></div>
+    </div>
+    
+    </div>
+    
+    
+    <div class="formgroup">
+    <p class="experience" >  + Add experience </p>
+    </div>
     
     <div class="formgroup">
     <p class="titleheader">Curriculum vitae</p>
