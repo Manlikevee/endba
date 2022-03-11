@@ -247,19 +247,19 @@
   }
   .name,
   .jobs {
-    margin-top: 15px;
+    margin-top: 13px;
   }
   .name{
     color: #000;
   }
   .name p {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 4px;
   }
   .name small{
-    font-size: 19px;
+    font-size: 15px;
   }
   header small {
     font-weight: 500;

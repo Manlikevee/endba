@@ -9,7 +9,7 @@
   --first-color: #6923D0;
   --first-color-light: #F4F0FA;
   --title-color: #19181B;
-  --text-color: #58555E;
+  --text-color: #29272c;
   --text-color-light: #A5A1AA;
   --body-color: #Fcfcfc;
   --container-color: #FFFFFF;
@@ -48,7 +48,7 @@
 }
 
 body {
-  line-height: 20px;
+  line-height: 10px;
   margin: var(--header-height) 0 0 0;
   padding: 1rem 1rem 0;
   font-family: var(--body-font);
